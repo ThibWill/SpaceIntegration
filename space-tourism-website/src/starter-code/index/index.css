@@ -1,0 +1,123 @@
+body {
+    overflow: hidden;
+    background-size: cover;
+    resize: both;
+}
+
+@media (min-width: 962px) {
+    body {
+        background-image: url("../assets/home/background-home-desktop.jpg");
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    body {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+    }
+}
+
+@media (max-width: 481px)  { 
+    body {
+        background-image: url("../assets/home/background-home-mobile.jpg");
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+@media (min-width: 962px) {
+    main {
+        position: fixed;
+        bottom: 13%;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    main {
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 481px)  { 
+    
+}
+
+.presentation-text {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 962px) {
+    .presentation-text {
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    .presentation-text {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.article-space {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.presentation-button {
+    width: 274px;
+    height: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 250px;
+    border: 1px solid white;
+    box-sizing: content-box;
+}
+
+@media (min-width: 962px) {
+    .presentation-button {
+        margin-right: 10%;
+        transition: border 0.5s, margin-right 0.5s, margin-bottom 0.5s;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    .presentation-button {
+        margin-top: 12%;
+        transition: border 0.5s, margin-bottom 0.5s;
+    }
+}
+
+.presentation-button:hover {
+    border: 80px solid rgb(32, 32, 43);
+    background-color: white;
+}
+
+@media (min-width: 962px) {
+    .presentation-button:hover {
+        margin-bottom: -79px;
+        margin-right: 86px;
+        transition: border 0.5s, margin-right 0.5s, margin-bottom 0.5s;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    .presentation-button:hover {
+        margin-bottom: -79px;
+        transition: border 0.5s, margin-bottom 0.5s;
+    }
+}
