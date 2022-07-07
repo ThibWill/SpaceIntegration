@@ -1,7 +1,6 @@
 body {
     overflow: hidden;
     background-size: cover;
-    resize: both;
 }
 
 @media (min-width: 962px) {
@@ -78,8 +77,6 @@ main {
 }
 
 .presentation-button {
-    width: 274px;
-    height: 274px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +87,8 @@ main {
 
 @media (min-width: 962px) {
     .presentation-button {
+        width: 274px;
+        height: 274px;
         margin-right: 10%;
         transition: border 0.5s, margin-right 0.5s, margin-bottom 0.5s;
     }
@@ -97,18 +96,29 @@ main {
 
 @media (min-width: 482px) and (max-width: 961px) {
     .presentation-button {
+        width: 242px;
+        height: 242px;
+        margin-top: 12%;
+        transition: border 0.5s, margin-bottom 0.5s;
+    }
+}
+
+@media (max-width: 481px)  { 
+    .presentation-button {
+        width: 150px;
+        height: 150px;
         margin-top: 12%;
         transition: border 0.5s, margin-bottom 0.5s;
     }
 }
 
 .presentation-button:hover {
-    border: 80px solid rgb(32, 32, 43);
     background-color: white;
 }
 
 @media (min-width: 962px) {
     .presentation-button:hover {
+        border: 80px solid rgb(32, 32, 43);
         margin-bottom: -79px;
         margin-right: 86px;
         transition: border 0.5s, margin-right 0.5s, margin-bottom 0.5s;
@@ -117,7 +127,14 @@ main {
 
 @media (min-width: 482px) and (max-width: 961px) {
     .presentation-button:hover {
+        border: 65px solid rgb(32, 32, 43);
         margin-bottom: -79px;
         transition: border 0.5s, margin-bottom 0.5s;
+    }
+}
+
+@media (max-width: 481px)  { 
+    .presentation-button:hover {
+        border: 45px solid rgb(32, 32, 43);
     }
 }

@@ -124,7 +124,24 @@ header nav li a:hover {
 .header-logo {
     width: 48px;
     height: 48px;
-    margin-left: 55px;
+}
+
+@media (min-width: 962px) {
+    .header-logo {
+        margin-left: 55px;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    .header-logo {
+        margin-left: 39px;
+    }
+}
+
+@media (max-width: 481px)  { 
+    .header-logo {
+        margin-left: 24px;
+    }
 }
 
 .header-bar {
