@@ -6,8 +6,20 @@ html, body {
 
 h1 {
     font-family: 'Bellefair';
-    font-size: 150px;
-    margin: 0;
+}
+
+@media (min-width: 482px) {
+    h1 {
+        font-size: 150px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 481px)  { 
+    h1 {
+        font-size: 80px;
+        margin: 0;
+    }
 }
 
 h2 {
@@ -100,7 +112,7 @@ a:hover   {
 }
 a:active  { 
     text-decoration: none; 
-} 
+}
 
 ul {
     margin: 0;

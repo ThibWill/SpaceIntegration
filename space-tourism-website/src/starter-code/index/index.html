@@ -8,13 +8,31 @@
   <link rel="stylesheet" href="../header.css">
   <link rel="stylesheet" href="./index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <script type="text/javascript" src="./index.js"></script>
   <title>Space tourism website</title>
 </head>
 <body>
   <header>
     <img class="header-logo" src="../assets/shared/logo.svg" alt="Logo">
     <div class="header-bar"></div>
-    <nav>
+    <div id="burger" class="burger-icon">
+      <svg viewBox="0 0 100 80" width="24" height="24">
+        <g color="#D0D6F9">
+          <rect width="100" height="10" fill="currentcolor"></rect>
+          <rect y="35" width="100" height="10" fill="currentcolor"></rect>
+          <rect y="70" width="100" height="10" fill="currentcolor"></rect>
+        </g>
+      </svg>
+    </div>
+    <nav id="navBar">
+      <div id="close" class="close-menu">
+        <svg viewPort="0 0 100 100" width="20" height="20">
+          <g color="#D0D6F9">
+            <line x1="0" y1="20" x2="20" y2="0" stroke="currentcolor" stroke-width="3" stroke-linecap="butt" />
+            <line x1="0" y1="0" x2="20" y2="20" stroke="currentcolor" stroke-width="3" stroke-linecap="butt" />
+          </g>
+        </svg>
+      </div>
       <ul class="nav-text">
         <li>
           <div class="activated">
@@ -51,7 +69,7 @@
       <h1 class="article-space">
         SPACE
       </h1>
-      <p class="text-color-secondary">
+      <p class="text-color-secondary paragraph-space">
         Let’s face it; if you want to go to space, you might as well genuinely go to 
         outer space and not hover kind of on the edge of it. Well sit back, and relax 
         because we’ll give you a truly out of this world experience!
