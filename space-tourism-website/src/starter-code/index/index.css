@@ -104,8 +104,8 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 250px;
-    border: 1px solid white;
     box-sizing: content-box;
+    background-color: white;
 }
 
 @media (min-width: 962px) {
@@ -113,46 +113,40 @@ main {
         width: 274px;
         height: 274px;
         margin-right: 10%;
-        transition: border 0.5s, margin-right 0.5s, margin-bottom 0.5s;
+        transition: box-shadow 0.5s;
+        border: 1px solid white;
     }
 }
 
 @media (min-width: 482px) and (max-width: 961px) {
     .presentation-button {
+        border: 0;
         width: 242px;
         height: 242px;
         margin-top: 12%;
-        transition: border 0.5s, margin-bottom 0.5s;
     }
 }
 
 @media (max-width: 481px)  { 
     .presentation-button {
+        border: 0;
         width: 150px;
         height: 150px;
         margin-top: 12%;
-        transition: border 0.5s, margin-bottom 0.5s;
     }
-}
-
-.presentation-button:hover {
-    background-color: white;
 }
 
 @media (min-width: 962px) {
     .presentation-button:hover {
-        border: 80px solid rgb(32, 32, 43);
-        margin-bottom: -79px;
-        margin-right: 86px;
-        transition: border 0.5s, margin-right 0.5s, margin-bottom 0.5s;
+        box-shadow: 0 0 0 80px rgb(32, 32, 43);;
+        transition: box-shadow 0.25s;
     }
 }
 
-@media (min-width: 482px) and (max-width: 961px) {
+/*@media (min-width: 482px) and (max-width: 961px) {
     .presentation-button:hover {
         border: 65px solid rgb(32, 32, 43);
-        margin-bottom: -79px;
-        transition: border 0.5s, margin-bottom 0.5s;
+        transition: border 0.5s;
     }
 }
 
@@ -160,4 +154,4 @@ main {
     .presentation-button:hover {
         border: 45px solid rgb(32, 32, 43);
     }
-}
+}*/

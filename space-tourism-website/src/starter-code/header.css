@@ -63,14 +63,20 @@ header {
 }
 
 header nav {
-    display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@media (min-width: 482px)  { 
+    header nav {
+        display: flex;
+    }
 }
 
 @media (max-width: 481px)  { 
     header nav {
         position: absolute;
+        display: none;
         right: 0;
         top: 0;
         width: 60%;

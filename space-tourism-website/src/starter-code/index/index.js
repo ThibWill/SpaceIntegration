@@ -1,4 +1,6 @@
 window.onload = () => {
+    const MOBILE_TRESHHOLD = 481;
+    
     const burger = document.querySelector("#burger");
     const close = document.querySelector("#close");
     const navBar = document.querySelector("#navBar");
@@ -24,9 +26,9 @@ window.onload = () => {
     (function(){
         let previousState = window.innerWidth;
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 481) {
+            if (window.innerWidth > MOBILE_TRESHHOLD) {
                 displayMenu();
-            } else if (previousState && previousState > 481) {
+            } else if (previousState && previousState > MOBILE_TRESHHOLD) {
                 removeMenu();
             }
             previousState = window.innerWidth;
