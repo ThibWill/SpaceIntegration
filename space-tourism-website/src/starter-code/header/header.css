@@ -3,6 +3,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;  
+    flex-shrink: 0;
 }
 
 @media (min-width: 962px) {
@@ -204,10 +205,9 @@ header nav li div {
 }
 
 .header-bar {
-    width: 30%;
-    position: fixed;
-    left: 167px;
-    top: 88px;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 20px;
     border: 1px solid #3d3d3e;
 }
 

@@ -36,7 +36,7 @@ main {
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
-        padding-bottom: 10%;
+        padding-bottom: 180px;
     }
 }
 
@@ -142,16 +142,3 @@ main {
         transition: box-shadow 0.25s;
     }
 }
-
-/*@media (min-width: 482px) and (max-width: 961px) {
-    .presentation-button:hover {
-        border: 65px solid rgb(32, 32, 43);
-        transition: border 0.5s;
-    }
-}
-
-@media (max-width: 481px)  { 
-    .presentation-button:hover {
-        border: 45px solid rgb(32, 32, 43);
-    }
-}*/
