@@ -32,6 +32,10 @@ main {
   flex-direction: column;
 }
 
+.planet-title {
+  margin-left: 12%;
+}
+
 .planet-panel {
   width: 100%;
   height: 100%;
@@ -73,10 +77,20 @@ main {
 
 .planet-nav ul li {
   margin-right: 35px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.planet-not-current:hover {
+  border-bottom: 3px solid grey;
+}
+
+.planet-current {
+  border-bottom: 3px solid white;
 }
 
 .planet-name {
-  margin-top: 36px;
+  margin-top: 22px;
   margin-bottom: 14px;
 }
 

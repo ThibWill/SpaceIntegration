@@ -148,3 +148,7 @@ ul {
 .text-color-secondary {
     color: #D0D6F9;
 }
+
+.bolded {
+    font-weight: bold;
+} 

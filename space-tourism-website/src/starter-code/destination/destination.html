@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../header/header.css">
   <link rel="stylesheet" href="./destination.css">
   <script type="text/javascript" src="../header/header.js"></script>
+  <script type="text/javascript" src="./destination.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
   <title>Space tourism website</title>
 </head>
@@ -62,19 +63,22 @@
     </nav>
   </header>
   <main class="text-color-primary">
-    <h5>01 Pick your destination</h5>
+    <h5 class="planet-title">
+      <span class="bolded">01</span>  
+      <span>PICK YOUR DESTINATION</span> 
+    </h5>
     <div class="planet-panel">
       <div class="planet-panel-img">
-        <img class="planet-img" src="../assets/destination/image-moon.png" alt="Europa">
+        <img id="planetImg" class="planet-img" src="../assets/destination/image-moon.png" alt="Europa">
       </div>
       <div class="planet-panel-article">
         <article class="planet-article">
           <nav class="planet-nav nav-text text-color-secondary">
             <ul>
-              <li>MOON</li>
-              <li>MARS</li>
-              <li>EUROPA</li>
-              <li>TITAN</li>
+              <li id="moon" class="planet-current">MOON</li>
+              <li id="mars" class="planet-not-current">MARS</li>
+              <li id="europa" class="planet-not-current">EUROPA</li>
+              <li id="titan" class="planet-not-current">TITAN</li>
             </ul>
           </nav>
           <div>
