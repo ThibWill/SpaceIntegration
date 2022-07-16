@@ -152,13 +152,13 @@ ul {
 }
 
 @media (min-width: 482px) {
-    h1 {
+    .nav-text {
         font-size: 16px;
     }
 }
 
 @media (max-width: 481px)  { 
-    p {
+    .nav-text {
         font-size: 14px;
     }
 }
