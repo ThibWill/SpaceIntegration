@@ -6,26 +6,42 @@ html, body {
 
 h1 {
     font-family: 'Bellefair';
+    margin: 0;
 }
 
 @media (min-width: 482px) {
     h1 {
         font-size: 150px;
-        margin: 0;
     }
 }
 
 @media (max-width: 481px)  { 
     h1 {
         font-size: 80px;
-        margin: 0;
     }
 }
 
 h2 {
     font-family: 'Bellefair';
-    font-size: 100px;
     margin: 0;
+}
+
+@media (min-width: 962px) {
+    h2 {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    h2 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 481px)  { 
+    h2 {
+        font-size: 56px;
+    }
 }
 
 h3 {
@@ -132,8 +148,19 @@ ul {
 
 .nav-text {
     font-family: 'Barlow Condensed';
-    font-size: 16px;
     letter-spacing: 0.1em;
+}
+
+@media (min-width: 482px) {
+    h1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 481px)  { 
+    p {
+        font-size: 14px;
+    }
 }
 
 .text {

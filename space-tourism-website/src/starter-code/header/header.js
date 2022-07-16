@@ -5,6 +5,7 @@ window.onload = () => {
     const close = document.querySelector("#close");
     const navBar = document.querySelector("#navBar");
 
+
     function displayMenu() {
         burger.style['display'] = 'none';
         navBar.style['display'] = 'flex';
