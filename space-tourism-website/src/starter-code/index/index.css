@@ -138,7 +138,7 @@ main {
 
 @media (min-width: 962px) {
     .presentation-button:hover {
-        box-shadow: 0 0 0 80px rgb(32, 32, 43);;
+        box-shadow: 0 0 0 80px rgb(255, 255, 255, 0.1);;
         transition: box-shadow 0.25s;
     }
 }

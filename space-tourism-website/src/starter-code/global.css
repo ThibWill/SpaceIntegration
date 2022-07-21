@@ -5,7 +5,7 @@ html, body {
 }
 
 h1 {
-    font-family: 'Bellefair';
+    font-family: 'Bellefair', serif;
     margin: 0;
 }
 
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Bellefair';
+    font-family: 'Bellefair', serif;
     margin: 0;
 }
 
@@ -45,13 +45,13 @@ h2 {
 }
 
 h3 {
-    font-family: 'Bellefair';
+    font-family: 'Bellefair', serif;
     font-size: 56px;
     margin: 0;
 }
 
 h4 {
-    font-family: 'Bellefair';
+    font-family: 'Bellefair', serif;
     font-size: 32px;
     margin: 0;
 }
@@ -134,7 +134,7 @@ ul {
 }
 
 .subheading1 {
-    font-family: 'Bellefair';
+    font-family: 'Bellefair', serif;
     font-size: 28px;
 }
 
