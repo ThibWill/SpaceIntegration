@@ -25,19 +25,36 @@ body {
   }
 }
 
+/* main */
+@media (min-width: 482px) and (max-width: 961px) {
+  main {
+    height: 100%;  
+  }
+}
+
+/* main */
+@media (max-width: 481px) {
+  main {
+    position: absolute;
+    bottom: 0;
+    height: 80%;  
+  }
+}
+
 /* crew-title */
 @media (min-width: 482px) and (max-width: 961px) {
   .crew-title {
-    margin-top: 40px;  
+    position: absolute;
+    left: 4%;
+    top: 136px;  
   }
 }
 
 @media (max-width: 481px) {
   .crew-title {
-    margin-top: 10px;  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;  
+    position: fixed;
+    top: 96px;  
+    text-align: center;
   }
 }
 
@@ -55,29 +72,117 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+}
+
+@media (min-width: 962px) {
+  .crew-panel-article {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .crew-panel-article {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 481px) {
+  .crew-panel-article {
+    height: 100%;
+    flex-direction: column-reverse; 
+    justify-content: space-between;
+  }
 }
 
 .crew-article {
-  margin-bottom: 94px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
+}
+
+@media (min-width: 962px) {
+  .crew-article {
+    justify-content: space-between;
+    margin-bottom: 94px;
+    flex: 1;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .crew-article {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 124px;
+  }
+}
+
+@media (max-width: 481px) {
+  .crew-article {
+    justify-content: space-around;
+    align-items: center;
+    min-height: 31vh;
+    flex: 1;
+  }
+}
+
+/* crew-infos */
+@media (min-width: 482px) and (max-width: 961px) {
+  .crew-infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 481px) {
+  .crew-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .crew-personal-title {
   opacity: 0.5;
 }
 
-.crew-name {
-  margin-top: 16px;
+/* crew-name */
+@media (min-width: 962px) {
+  .crew-name {
+    margin-top: 16px;
+  }
 }
 
-.crew-paragraph-article {
-  margin-top: 28px;
-  max-width: 444px;
+@media (max-width: 961px) {
+  .crew-name {
+    margin-top: 8px;
+  }
+}
+
+/* crew-bio */
+@media (min-width: 962px) {
+  .crew-bio {
+    max-width: 444px;
+    margin-top: 28px;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .crew-bio {
+    max-width: 458px;
+    margin-top: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 481px) {
+  .crew-bio {
+    margin-top: 16px;
+    text-align: center;
+  }
 }
 
 .crew-container-img {
@@ -89,8 +194,32 @@ body {
   align-items: center;
 }
 
-.crew-img {
-  height: calc(100vh - 176px);
+@media (min-width: 482px) and (max-width: 961px) {
+  .crew-container-img {
+    margin-top: 40px;
+  }
+}
+
+/* crew-img */
+@media (min-width: 962px) {
+  .crew-img {
+    height: calc(100vh - 176px);
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .crew-img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 481px) {
+  .crew-img {
+    width: 100%;
+    height: 31vh;
+    object-fit: contain;
+    border-bottom: 2px solid #383B4B;
+  }
 }
 
 .nav-footer {
@@ -98,13 +227,39 @@ body {
   flex-direction: row;
 }
 
+@media (min-width: 482px) and (max-width: 961px) {
+  .nav-footer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 481px) {
+  .nav-footer {
+    order: -1;
+  }
+}
+
 .nav-dot {
-  width: 15px;
-  height: 15px;
   border-radius: 10px;
   background-color: white;
-  margin-right: 24px;
   opacity: 0.18;
+}
+
+@media (min-width: 962px) {
+  .nav-dot {
+    width: 15px;
+    height: 15px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 961px) {
+  .nav-dot {
+    margin: 0px 8px 0px 8px;
+    width: 10px;
+    height: 10px;
+    order: -1;
+  }
 }
 
 .crew-active {

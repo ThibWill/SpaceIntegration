@@ -46,15 +46,44 @@ h2 {
 
 h3 {
     font-family: 'Bellefair', serif;
-    font-size: 56px;
     margin: 0;
+}
+
+@media (min-width: 962px) {
+    h3 {
+        font-size: 56px;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 481px)  { 
+    h3 {
+        font-size: 24px;
+    }
 }
 
 h4 {
     font-family: 'Bellefair', serif;
-    font-size: 32px;
     margin: 0;
 }
+
+@media (min-width: 962px) {
+    h4 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+    h4 {
+        font-size: 24px;
+    }
+}
+
 
 h5 {
     font-family: 'Barlow Condensed';

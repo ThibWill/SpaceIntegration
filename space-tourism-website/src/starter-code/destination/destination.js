@@ -43,24 +43,24 @@ const planets = {
 
 Object.keys(planets).forEach((planetName) => {
   planets[planetName].domElement.addEventListener('click', () => {
-    changePlanetImg(`../assets/destination/image-${planetName}.png`, planetName);
+    changesPlanetInfos(`../assets/destination/image-${planetName}.png`, planetName);
     changeActiveTab(planetName);
   });
 });
 
-function changePlanetImg(urlImage, altTitle) {
+function changesPlanetInfos(urlImage, planetName) {
+  planetNameDom.innerHTML = planetName.toUpperCase();
+  planetDescriptionDom.innerHTML = planets[planetName].description;
+  planetDistanceDom.innerHTML = planets[planetName].distance;
+  planetTimeDom.innerHTML = planets[planetName].travelTime;
   planetImg.src = urlImage;
-  planetImg.alt = altTitle;
+  planetImg.alt = planetName;
 }
 
 function changeActiveTab(name) {
   Object.keys(planets).forEach((planetName) => {
     if (name === planetName) {
       planets[planetName].domElement.classList = 'planet-current';
-      planetNameDom.innerHTML = planetName.toUpperCase();
-      planetDescriptionDom.innerHTML = planets[planetName].description;
-      planetDistanceDom.innerHTML = planets[planetName].distance;
-      planetTimeDom.innerHTML = planets[planetName].travelTime;
       return;
     } 
     planets[planetName].domElement.classList = 'planet-not-current';
