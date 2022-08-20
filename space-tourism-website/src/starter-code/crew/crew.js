@@ -64,7 +64,7 @@ Object.keys(crew).forEach((astronautName) => {
     crewName.innerHTML = astronautName.toUpperCase();
     crewRole.innerHTML = crew[astronautName].role.toUpperCase();
     crewBio.innerHTML = crew[astronautName].bio.text;
-    crewBio.style.maxWidth = crew[astronautName].bio.width;
+    crewBio.style['maxWidth'] = crew[astronautName].bio.width;
     crewImg.src = crew[astronautName].images.webp;
     crewImg.alt = `${astronautName} Image`;
     changeActiveNav(astronautName);

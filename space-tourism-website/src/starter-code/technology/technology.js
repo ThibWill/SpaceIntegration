@@ -1,10 +1,13 @@
+const TABLET_TRESHHOLD = "961";
+
 const launchVehicule = document.querySelector('#launchVehicule');
 const spaceport = document.querySelector('#spaceport');
 const spaceCapsule = document.querySelector('#spaceCapsule');
 
 const technologyNameDom = document.querySelector('#technology-name');
 const technologyDescriptionDom = document.querySelector('#technology-description');
-const technologyImg = document.querySelector('#technologyImg');
+const technologyImg = document.querySelector('#technology-img');
+
 
 const technologies = {
   launchVehicule: {
@@ -46,8 +49,13 @@ Object.keys(technologies).forEach((technologyName) => {
 function changesTechnologyInfos(technologyName) {
   technologyNameDom.innerHTML = technologies[technologyName].name.toUpperCase();
   technologyDescriptionDom.innerHTML = technologies[technologyName].description;
-  technologyImg.src = technologies[technologyName].images.portrait;
   technologyImg.alt = technologies[technologyName].name;
+
+  if (window.innerWidth > TABLET_TRESHHOLD) {
+    technologyImg.src = technologies[technologyName].images.portrait;
+    return;
+  } 
+  technologyImg.src = technologies[technologyName].images.landscape;
 }
 
 function changeActiveTab(name) {
@@ -59,3 +67,23 @@ function changeActiveTab(name) {
     technologies[technologyName].domElement.classList = 'technology-nav-dot technology-not-current';
   });
 }
+
+(function(){
+  // Initialize image
+  (function () {
+    if (window.innerWidth > TABLET_TRESHHOLD) {
+      technologyImg.src = "../assets/technology/image-launch-vehicle-portrait.jpg";
+      return;
+    } 
+    technologyImg.src = "../assets/technology/image-launch-vehicle-landscape.jpg";
+  })();
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > TABLET_TRESHHOLD) {
+      technologyImg.src = technologyImg.src.replace("landscape", "portrait");
+      return;
+    } 
+    technologyImg.src = technologyImg.src.replace("portrait", "landscape");
+  });
+}());
+

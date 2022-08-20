@@ -4,7 +4,6 @@ const burger = document.querySelector("#burger");
 const close = document.querySelector("#close");
 const navBar = document.querySelector("#navBar");
 
-
 function displayMenu() {
     burger.style['display'] = 'none';
     navBar.style['display'] = 'flex';
@@ -24,13 +23,13 @@ close.addEventListener('click', () => {
 });
 
 (function(){
-    let previousState = window.innerWidth;
+    let previousWidthState = window.innerWidth;
     window.addEventListener('resize', () => {
         if (window.innerWidth > MOBILE_TRESHHOLD) {
             displayMenu();
-        } else if (previousState && previousState > MOBILE_TRESHHOLD) {
+        } else if (previousWidthState > MOBILE_TRESHHOLD) {
             removeMenu();
         }
-        previousState = window.innerWidth;
+        previousWidthState = window.innerWidth;
     });
 }());
