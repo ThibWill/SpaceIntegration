@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="../fonts/fonts.css">
   <link rel="stylesheet" href="../global.css">
   <link rel="stylesheet" href="../header/header.css">
-  <link rel="stylesheet" href="./destination.css">
+  <link rel="stylesheet" href="./crew.css">
   <script type="text/javascript" src="../header/header.js" defer></script>
-  <script type="text/javascript" src="./destination.js" defer></script>
+  <script type="text/javascript" src="./crew.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
   <title>Space tourism website</title>
 </head>
@@ -42,16 +42,16 @@
           </a>
         </li>
         <li>
-          <div class="activated">
+          <a href="../destination/destination.html">
             <span class="bolded">01&nbsp;</span>
             <span>DESTINATION</span>
-          </div>
+          </a>
         </li>
         <li>
-          <a href="../crew/crew.html">
+          <div class="activated">
             <span class="bolded">02&nbsp;</span>
             <span>CREW</span>
-          </a>
+          </div>
         </li>
         <li>
           <a href="../technology/technology.html">
@@ -63,42 +63,29 @@
     </nav>
   </header>
   <main class="text-color-primary">
-    <h5 class="planet-title">
-      <span class="planet-page-number">01</span>  
-      <span>PICK YOUR DESTINATION</span> 
-    </h5>
-    <div class="planet-panel">
-      <div class="planet-panel-img">
-        <img id="planetImg" class="planet-img" src="../assets/destination/image-moon.png" alt="Moon">
-      </div>
-      <div class="planet-panel-article">
-        <article class="planet-article">
-          <nav class="planet-nav nav-text text-color-secondary">
-            <ul>
-              <li id="moon" class="planet-current">MOON</li>
-              <li id="mars" class="planet-not-current">MARS</li>
-              <li id="europa" class="planet-not-current">EUROPA</li>
-              <li id="titan" class="planet-not-current">TITAN</li>
-            </ul>
-          </nav>
-          <div>
-            <h2 id="planet-name" class="planet-name">MOON</h2>
-            <p id="planet-description" class="text-color-secondary">
-              See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. 
-              While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
-            </p>
-          </div>
-          <footer class="planet-footer">
-            <div>
-              <span class="subheading2 planet-linespace">AVG. DISTANCE</span>
-              <span id="planet-distance" class="subheading1">384,400 KM</span>
-            </div>
-            <div>
-              <span class="subheading2 planet-linespace">EST. TRAVEL TIME</span>
-              <span id="planet-time" class="subheading1">3 DAYS</span>
-            </div>
-          </footer>
-        </article>
+    <div class="crew-panel-article">
+      <article class="crew-article">
+        <h5 class="crew-title">
+          <span class="crew-page-number">02</span>  
+          <span>MEET YOUR CREW</span> 
+        </h5>
+        <div class="crew-infos">
+          <h4 id="crew-role" class="crew-personal-title">COMMANDER</h4>
+          <h3 id="crew-name" class="crew-name">DOUGLAS HURLEY</h3>
+          <p id="crew-bio" class="crew-bio text-color-secondary">
+            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut.
+            He launched into space for the third time as commander of Crew Dragon Demo-2.
+          </p>
+        </div>
+        <footer class="nav-footer">
+          <div id="crew-douglas" class="nav-dot crew-active"></div>
+          <div id="crew-mark" class="nav-dot crew-inactive"></div>
+          <div id="crew-victor" class="nav-dot crew-inactive"></div>
+          <div id="crew-anousheh" class="nav-dot crew-inactive"></div>
+        </footer>
+      </article>
+      <div class="crew-container-img">
+        <img id="crew-img" class="crew-img" src="../assets/crew/image-douglas-hurley.webp" alt="Douglas Hurley Image">
       </div>
     </div>
   </main>
