@@ -1,0 +1,282 @@
+body {
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+@media (min-width: 962px) {
+  body {
+      display: flex;
+      flex-direction: column;
+      background-image: url("../assets/destination/background-destination-desktop.jpg");
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  body {
+      background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+}
+
+@media (max-width: 481px)  { 
+  body {
+      display: flex;
+      flex-direction: column;
+      background-image: url("../assets/destination/background-destination-mobile.jpg");
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* planet-title */
+@media (min-width: 962px) {
+  .planet-title {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .planet-title {
+    margin-top: 40px;  
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 481px) {
+  .planet-title {
+    margin-top: 10px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+  }
+}
+
+.planet-page-number {
+  opacity: 0.25;
+}
+
+@media (max-width: 481px)  { 
+  .planet-page-number {
+    margin-right: 18px;
+  }
+}
+
+.planet-panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@media (min-width: 962px) {
+  .planet-panel {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .planet-panel {
+    flex-direction: column;  
+  }
+}
+
+@media (max-width: 481px)  { 
+  .planet-panel {
+    flex-direction: column;
+  }
+}
+
+.planet-panel-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 962px) {
+  .planet-panel-img {
+    flex: 1;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .planet-panel-img {
+    margin: 60px 0px 53px 0px;
+  }
+}
+
+@media (max-width: 481px) {
+  .planet-panel-img {
+    margin: 32px 0px 26px 0px;
+  }
+}
+
+/* planet-img */
+@media (min-width: 962px) {
+  .planet-img {
+    width: 445px;
+    height: 445px;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .planet-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 481px)  { 
+  .planet-img {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.planet-panel-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 962px) {
+  .planet-panel-article {
+    flex: 1;
+  }
+}
+
+.planet-article {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 962px) {
+  .planet-article {
+    width: 445px;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .planet-article {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 481px) {
+  .planet-article {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.planet-nav ul {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .planet-nav ul {
+    width: 285px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 481px) {
+  .planet-nav ul {
+    width: 238px;
+    justify-content: space-between;
+  }
+}
+
+.planet-nav ul li {
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+@media (min-width: 962px) {
+  .planet-nav ul li {
+    margin-right: 35px;
+  }
+}
+
+.planet-not-current:hover {
+  border-bottom: 3px solid grey;
+}
+
+.planet-current {
+  border-bottom: 3px solid white;
+}
+
+.planet-name {
+  margin-top: 22px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 481px) {
+  .planet-name {
+    margin-top: 20px;
+    margin-bottom: 2px;
+  }
+}
+
+.planet-footer {
+  display: flex;
+  border-top: 1px solid #383B4B;
+}
+
+@media (min-width: 962px) {
+  .planet-footer {
+    flex-direction: row;
+    margin-top: 54px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 961px) {
+  .planet-footer {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 48px;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 481px) {
+  .planet-footer {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+}
+
+.planet-footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 482px) {
+  .planet-footer div {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 481px) {
+  .planet-footer div {
+    margin-top: 32px;
+  }
+}
+
+.planet-linespace {
+  margin-bottom: 12px
+}

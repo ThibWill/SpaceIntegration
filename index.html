@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./header/header.css">
+  <link rel="stylesheet" href="./index.css">
+  <script type="text/javascript" src="./header/header.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Space tourism website</title>
+</head>
+<body>
+  <header>
+    <img class="header-logo" src="./assets/shared/logo.svg" alt="Logo">
+    <div class="header-bar"></div>
+    <div id="burger" class="burger-icon">
+      <svg viewBox="0 0 100 80" width="24" height="24">
+        <g color="#D0D6F9">
+          <rect width="100" height="10" fill="currentcolor"></rect>
+          <rect y="35" width="100" height="10" fill="currentcolor"></rect>
+          <rect y="70" width="100" height="10" fill="currentcolor"></rect>
+        </g>
+      </svg>
+    </div>
+    <nav id="navBar">
+      <div id="close" class="close-menu">
+        <svg viewPort="0 0 100 100" width="20" height="20">
+          <g color="#D0D6F9">
+            <line x1="0" y1="20" x2="20" y2="0" stroke="currentcolor" stroke-width="3" stroke-linecap="butt" />
+            <line x1="0" y1="0" x2="20" y2="20" stroke="currentcolor" stroke-width="3" stroke-linecap="butt" />
+          </g>
+        </svg>
+      </div>
+      <ul class="nav-text">
+        <li>
+          <div class="activated">
+            <span class="bolded">00&nbsp;</span>
+            <span>HOME</span> 
+          </div>
+        </li>
+        <li>
+          <a href="./destination/destination.html">
+            <span class="bolded">01&nbsp;</span>
+            <span>DESTINATION</span>
+          </a>
+        </li>
+        <li>
+          <a href="./crew/crew.html">
+            <span class="bolded">02&nbsp;</span>
+            <span>CREW</span>
+          </a>
+        </li>
+        <li>
+          <a href="./technology/technology.html">
+            <span class="bolded">03&nbsp;</span>
+            <span>TECHNOLOGY</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="text-color-primary">
+    <article class="presentation-text">
+      <h5 class="text-color-secondary">
+        SO, YOU WANT TO TRAVEL TO
+      </h5>
+      <h1 class="article-space">
+        SPACE
+      </h1>
+      <p class="text-color-secondary paragraph-space">
+        Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!
+      </p>
+    </article>
+    <button onclick="location.href='./destination/destination.html'" class="presentation-button subheading1">
+      <h4>EXPLORE</h4> 
+    </button>
+  </main>
+</body>
+</html>

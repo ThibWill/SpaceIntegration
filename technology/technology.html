@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../header/header.css">
+  <link rel="stylesheet" href="./technology.css">
+  <script type="text/javascript" src="../header/header.js" defer></script>
+  <script type="text/javascript" src="./technology.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <title>Space tourism website</title>
+</head>
+<body>
+  <header>
+    <img class="header-logo" src="../assets/shared/logo.svg" alt="Logo">
+    <div class="header-bar"></div>
+    <div id="burger" class="burger-icon">
+      <svg viewBox="0 0 100 80" width="24" height="24">
+        <g color="#D0D6F9">
+          <rect width="100" height="10" fill="currentcolor"></rect>
+          <rect y="35" width="100" height="10" fill="currentcolor"></rect>
+          <rect y="70" width="100" height="10" fill="currentcolor"></rect>
+        </g>
+      </svg>
+    </div>
+    <nav id="navBar">
+      <div id="close" class="close-menu">
+        <svg viewPort="0 0 100 100" width="20" height="20">
+          <g color="#D0D6F9">
+            <line x1="0" y1="20" x2="20" y2="0" stroke="currentcolor" stroke-width="3" stroke-linecap="butt" />
+            <line x1="0" y1="0" x2="20" y2="20" stroke="currentcolor" stroke-width="3" stroke-linecap="butt" />
+          </g>
+        </svg>
+      </div>
+      <ul class="nav-text">
+        <li>
+          <a href="../index/index.html">
+            <span class="bolded">00&nbsp;</span>
+            <span>HOME</span> 
+          </a>
+        </li>
+        <li>
+          <a href="../destination/destination.html">
+            <span class="bolded">01&nbsp;</span>
+            <span>DESTINATION</span>
+          </a>
+        </li>
+        <li>
+          <a href="../crew/crew.html">
+            <span class="bolded">02&nbsp;</span>
+            <span>CREW</span>
+          </a>
+        </li>
+        <li>
+          <div class="activated">
+            <span class="bolded">03&nbsp;</span>
+            <span>TECHNOLOGY</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="text-color-primary">
+    <h5 class="technology-title">
+      <span class="technology-page-number">03</span>  
+      <span>SPACE LAUNCH 101</span> 
+    </h5>
+    <div class="technology-panel">
+      <div class="technology-article-panel">
+        <nav class="technology-nav">
+          <h4 id="launchVehicule" class="technology-nav-dot technology-current">1</h4>
+          <h4 id="spaceport" class="technology-nav-dot technology-not-current">2</h4>
+          <h4 id="spaceCapsule" class="technology-nav-dot technology-not-current">3</h4>
+        </nav>
+        <article class="technology-article">
+          <span class="nav-text technology-article-pre-title text-color-secondary">THE TERMINOLOGY...</span>
+          <h3 id="technology-name" class="technology-article-title">LAUNCH VEHICULE</h3>
+          <p id="technology-description" class="technology-description text-color-secondary">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. 
+            Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+          </p>
+        </article>
+      </div>
+      <div class="technology-container-img">
+        <img class="technology-img" id="technology-img" src="../assets/technology/image-launch-vehicle-portrait.jpg" alt="Image Capsule">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
